@@ -2,18 +2,5 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-11xgdm)
 
-Bootcamp: Desenvolvendor(a) Front End
-Trabalho Prático
-Módulo 1: Design para Front-End
-
-Enunciado
-O objetivo deste trabalho é usar o que foi aprendido nas aulas e fazer com que o site provido 
-seja:
-- Semanticamente coerente de acordo com as regras do HTML semântico.
-- Responsivo.
-- Com as devidas animações pedidas.
-O projeto será feito em HTML, SASS e JavaScript puro (Vanilla), e será usado Flexbox para 
-organização do posicionamento do conteúdo.
-
-
-
+Bootcamp: Front-end Developer - Front-end Design Homework
+https://github.com/gsag/vanilla-js-flags/blob/46d49b95204e37bc5a1f9a9187d174d52de1fd79/Enunciado%20do%20Trabalho%20pr%C3%A1tico%20%E2%80%93%20M%C3%B3dulo%201%20%E2%80%93%20Desenvolvedor(a)%20Front%20End.pdf
