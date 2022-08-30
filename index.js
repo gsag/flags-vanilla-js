@@ -1,3 +1,5 @@
+import './style.css';
+
 (async () => {
   const setContainerInnerHtml = (str) => document.querySelector(".country-list-container").innerHTML = str;
   setContainerInnerHtml("Loading...");
