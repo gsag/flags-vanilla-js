@@ -8,9 +8,11 @@
     region: country.region,
     subregion: country.subregion,
     capital: country.capital,
-    flags: country.flags 
-  }))
-console.log(countryMappedData)
+    flags: country.flags,
+    language: (country.languages) ? Object.keys(country.languages)[0] : null
+  }));
+
+  const handleDataForTemplate = (data) => data ?? "---"; 
   const renderTemplate = (countryList) => {
     return `
     <h1>Country List</h1>
@@ -22,17 +24,19 @@ console.log(countryMappedData)
               <img src="${country.flags.svg}"/>
             </div>
             <div class="country-list__flag--flipped">
-              <span>${country.name.common}</span>
-              <span>${country.name.official}</span>
-              <span>${country.capital}</span>
-              <span>${country.region}</span>
-              <span>${country.subregion}</span>
+              <span>${handleDataForTemplate(country.name.common)}</span>
+              <span>Native name: 
+                ${
+                  handleDataForTemplate(country.language ? country.name.nativeName[country.language]?.common : null)
+                }</span>
+              <span>Capital: ${handleDataForTemplate(country.capital)}</span>
+              <span>Region: ${handleDataForTemplate(country.region)}</span>
+              <span>Sub-region: ${handleDataForTemplate(country.subregion)}</span>
             </div>
           </div>
         </li>
       `).join("")}
     </ul>`
   }
-  
   setContainerInnerHtml(renderTemplate(countryMappedData));
 })();

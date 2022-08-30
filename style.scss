@@ -18,10 +18,6 @@ h1
     height: 200px;
     border-radius: .25em;
     border: 1px solid grey;
-    &:hover > .country-list__flag
-    {
-      transform: rotateY(180deg);
-    }
   }
   > &__flag
   {
@@ -54,7 +50,14 @@ h1
       position: absolute;
       backface-visibility: hidden;
     }
-  };
+  }
+}
+.country-list:hover
+{
+  > &__flag
+  {
+    transform: rotateY(180deg);
+  }
 }
 .Europe
 {
