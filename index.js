@@ -24,7 +24,7 @@
               <img src="${country.flags.svg}"/>
             </div>
             <div class="country-list__flag--flipped">
-              <span>${handleDataForTemplate(country.name.common)}</span>
+              <h2>${handleDataForTemplate(country.name.common)}</h2>
               <span>Native name: 
                 ${
                   handleDataForTemplate(country.language ? country.name.nativeName[country.language]?.common : null)
